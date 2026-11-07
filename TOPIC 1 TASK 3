@@ -1,1 +1,19 @@
+# business.py
+# Demonstrates how Python can automate a simple business calculation
 
+# Variables storing business and purchase information
+business_name = "Wanjiru General Store"
+product_name = "Sugar (2kg pack)"
+product_price = 320.50   # price per unit in KES
+quantity_purchased = 12
+
+# Calculate the total purchase cost
+total_cost = product_price * quantity_purchased
+
+# Display the results
+print("===== PURCHASE SUMMARY =====")
+print("Business Name :", business_name)
+print("Product Name  :", product_name)
+print("Quantity      :", quantity_purchased)
+print("Unit Price    : KES", product_price)
+print("Total Cost    : KES", total_cost)
