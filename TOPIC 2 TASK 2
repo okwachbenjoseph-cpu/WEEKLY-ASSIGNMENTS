@@ -1,1 +1,23 @@
+# supermarket.py
+# Calculates the total cost of products purchased by a customer
 
+# Ask the customer for details (input() returns strings)
+customer_name = input("Enter customer name: ")
+product_name = input("Enter product name: ")
+quantity = input("Enter quantity purchased: ")
+price = input("Enter price per item: ")
+
+# Convert data types
+quantity = int(quantity)    # string -> integer
+price = float(price)        # string -> floating-point number
+
+# Total cost is found by multiplying the quantity purchased by the price per item
+total_cost = quantity * price
+
+# Display the information using f-strings (price and total cost to 3 decimal places)
+print("\n===== PURCHASE DETAILS =====")
+print(f"Customer Name : {customer_name}")
+print(f"Product Name  : {product_name}")
+print(f"Quantity      : {quantity}")
+print(f"Price         : {price:.3f}")
+print(f"Total Cost    : {total_cost:.3f}")
