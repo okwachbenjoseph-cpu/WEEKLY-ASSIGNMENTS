@@ -1,1 +1,28 @@
+"""
+employee_status.py
 
+Purpose of the program:
+This program records basic information about an employee, including
+whether the employee is currently active. The active status is stored
+as a Boolean value (True or False). The program displays the details
+using an f-string and also shows how a number can be converted to a
+string with str() so that it can be concatenated with other text.
+"""
+
+# Employee information
+employee_name = "Peter Otieno"
+employee_age = 29
+employee_salary = 52000.75
+employee_active = True   # Boolean: True = active, False = not active
+
+# Display all employee information using an f-string
+print("===== EMPLOYEE INFORMATION =====")
+print(f"Name   : {employee_name}")
+print(f"Age    : {employee_age}")
+print(f"Salary : {employee_salary:.2f}")
+print(f"Active : {employee_active}")
+
+# Convert numbers to strings using str() before concatenating
+print("\n===== STRING CONCATENATION =====")
+print("Employee age: " + str(employee_age) + " years")
+print("Employee salary: KES " + str(employee_salary))
