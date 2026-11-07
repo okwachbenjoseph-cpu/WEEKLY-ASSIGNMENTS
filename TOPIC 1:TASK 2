@@ -1,1 +1,15 @@
+# student.py
+# Stores and displays basic student information
 
+# Variables storing student information
+student_name = "Amina Wanjiru"
+registration_number = "CS/2024/0457"
+course = "Bachelor of Science in Computer Science"
+year_of_study = 2
+
+# Display all the student information
+print("===== STUDENT INFORMATION =====")
+print("Student Name       :", student_name)
+print("Registration Number:", registration_number)
+print("Course             :", course)
+print("Year of Study      :", year_of_study)
