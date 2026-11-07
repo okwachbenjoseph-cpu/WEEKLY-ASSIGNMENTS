@@ -1,1 +1,23 @@
+# employee.py
+# Records and displays employee information
 
+# Accept input from the keyboard (input() always returns a string)
+employee_name = input("Enter employee name: ")
+employee_id = input("Enter employee ID: ")
+employee_age = input("Enter employee age: ")
+basic_salary = input("Enter basic salary: ")
+
+# Convert data types
+employee_age = int(employee_age)        # string -> integer
+basic_salary = float(basic_salary)      # string -> floating-point number
+
+# Calculate annual salary
+annual_salary = basic_salary * 12
+
+# Display employee details using an f-string (salaries to 2 decimal places)
+print("\n===== EMPLOYEE DETAILS =====")
+print(f"Name          : {employee_name}")
+print(f"Employee ID   : {employee_id}")
+print(f"Age           : {employee_age}")
+print(f"Basic Salary  : {basic_salary:.2f}")
+print(f"Annual Salary : {annual_salary:.2f}")
