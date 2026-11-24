@@ -1,1 +1,27 @@
+# Supermarket Discount Calculator
 
+# i. Ask the customer for the total purchase amount
+amount = input("Enter total purchase amount (KSh): ")
+
+# ii. Convert the amount to a floating-point number
+amount = float(amount)
+
+# iii. Check whether the purchase is at least KSh 10,000
+if amount >= 10000:
+    # iv. Discount = 15% of purchase amount
+    discount = 0.15 * amount
+else:
+    discount = 0.0
+
+# v. Final amount = purchase amount - discount
+final_amount = amount - discount
+
+# Display results
+print("\n----- Purchase Summary -----")
+print(f"Purchase Amount : KSh {amount:,.2f}")
+if discount > 0:
+    print("Discount        : 15% applied")
+else:
+    print("Discount        : Not eligible (purchase below KSh 10,000)")
+print(f"Discount Amount : KSh {discount:,.2f}")
+print(f"Final Amount    : KSh {final_amount:,.2f}")
